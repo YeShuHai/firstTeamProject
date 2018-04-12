@@ -31,11 +31,23 @@ namespace Gamekit2D
         [HideInInspector]
         public DataSettings dataSettings;
 
+        public float max_Health = 1.0f;
+        public GameObject healthBar;
+
+        public void SetHealthBar(float myHealth)
+        {
+            // myHealth value 0 ~ 1 , 
+            healthBar.transform.localScale = new Vector3(myHealth, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
+        }
+
+
         protected bool m_Invulnerable;
         protected float m_InulnerabilityTimer;
         protected int m_CurrentHealth;
         protected Vector2 m_DamageDirection;
         protected bool m_ResetHealthOnSceneReload;
+
+        
 
         public int CurrentHealth
         {
@@ -86,7 +98,7 @@ namespace Gamekit2D
         {
             return m_DamageDirection;
         }
-
+        
         public void TakeDamage(Damager damager, bool ignoreInvincible = false)
         {
             if ((m_Invulnerable && !ignoreInvincible) || m_CurrentHealth <= 0)
@@ -101,8 +113,13 @@ namespace Gamekit2D
             }
 
             m_DamageDirection = transform.position + (Vector3)centreOffset - damager.transform.position;
+            
 
             OnTakeDamage.Invoke(damager, this);
+
+            max_Health -= 0.2f;
+            SetHealthBar(max_Health);
+
 
             if (m_CurrentHealth <= 0)
             {
