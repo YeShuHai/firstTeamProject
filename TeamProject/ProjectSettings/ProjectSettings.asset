@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 14
-  productGUID: 7c4d70423772d784baced5cb2836cac4
+  productGUID: 00000000000000000000000000000000
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -740,7 +740,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
   cloudProjectId: 98b267d0-4fd0-46b5-8e37-949562a6f197
-  projectName: TeamProject
+  projectName: Platformer-2D
   organizationId: ghksrl100
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

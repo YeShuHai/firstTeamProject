@@ -76,6 +76,7 @@ namespace Gamekit2D
                 var b = renderers[i].gameObject.AddComponent<VisibleBubbleUp>();
                 b.objectBecameVisible = BecameVisible;
             }
+
             //we make point in the path being defined in local space so game designer can move the platform & path together
             //but as the platform will move during gameplay, that would also move the node. So we convert the local nodes
             // (only used at edit time) to world position (only use at runtime)
@@ -116,7 +117,6 @@ namespace Gamekit2D
             if(m_WaitTime > 0)
             {
                 m_WaitTime -= Time.deltaTime;
-                speed *= 10f;
                 return;
             }
 

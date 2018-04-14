@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bar : MonoBehaviour {
+public class HealthBar : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

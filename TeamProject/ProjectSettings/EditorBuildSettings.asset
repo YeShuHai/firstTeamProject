@@ -8,19 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/2DGamekit/Scenes/Start.unity
     guid: 57df1e417250bc247976c2c0dc088efe
-  - enabled: 0
+  - enabled: 1
     path: Assets/2DGamekit/Scenes/Zone1.unity
     guid: a94cb8f134bf81349ad016c79b629e3d
-  - enabled: 0
+  - enabled: 1
     path: Assets/2DGamekit/Scenes/Zone2.unity
     guid: 5436c67e9267f17458b31fcdc20cd20a
-  - enabled: 0
+  - enabled: 1
     path: Assets/2DGamekit/Scenes/Zone3.unity
     guid: 4b4b0e246fc7dbb4295a38fd03241362
-  - enabled: 0
+  - enabled: 1
     path: Assets/2DGamekit/Scenes/Zone4.unity
     guid: 5b0c2d9ddd151ba489db19a4fb634327
-  - enabled: 0
+  - enabled: 1
     path: Assets/2DGamekit/Scenes/Zone5.unity
     guid: 960b12f881940d84983273421bebc695
   - enabled: 1
@@ -30,17 +30,11 @@ EditorBuildSettings:
     path: Assets/2DGamekit/Scenes/UI/Loading.unity
     guid: ebc4647ff02971c4ba1b207af066be4d
   - enabled: 1
-    path: Assets/2DGamekit/Scenes/TeamProject1.unity
-    guid: d0f8af601e6b76c48b657a4070a92b8d
-  - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/5934ae77ebe153e42b8caac0720e963e
-    guid: 5934ae77ebe153e42b8caac0720e963e
+    path: Assets/NewZone1.unity
+    guid: fb293f2644baa354290b28cf327d668e
   - enabled: 1
-    path: Assets/2DGamekit/Scenes/TeamProject2.unity
-    guid: a88684e6f74da1d4497b6391613f6c8c
-  - enabled: 0
-    path: Assets/TeamZone3.unity
-    guid: 1e5e5548326807d41ab462bdd6855909
+    path: Assets/NewZone2.unity
+    guid: 9bc85148b0e1f9442b2f31354719d51f
   - enabled: 1
-    path: Assets/2DGamekit/Scenes/TeamProject3.unity
-    guid: 886a81757768cdf4795278e4caa6d890
+    path: Assets/NewZone3.unity
+    guid: 74d4fec600779d9438fe589ddb61e2c9
