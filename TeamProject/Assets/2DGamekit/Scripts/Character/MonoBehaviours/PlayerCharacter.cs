@@ -37,9 +37,6 @@ namespace Gamekit2D
         public float jumpSpeed = 20f;
         public float jumpAbortSpeedReduction = 100f;
 
-       
-
-
         [Range(k_MinHurtJumpAngle, k_MaxHurtJumpAngle)] public float hurtJumpAngle = 45f;
         public float hurtJumpSpeed = 5f;
         public float flickeringDuration = 0.1f;
@@ -137,8 +134,6 @@ namespace Gamekit2D
             m_TanHurtJumpAngle = Mathf.Tan(Mathf.Deg2Rad * hurtJumpAngle);
             m_FlickeringWait = new WaitForSeconds(flickeringDuration);
 
-           
-
             meleeDamager.DisableDamage();
 
             m_ShotSpawnGap = 1f / shotsPerSecond;
@@ -161,7 +156,6 @@ namespace Gamekit2D
 
             m_StartingPosition = transform.position;
             m_StartingFacingLeft = GetFacing() < 0.0f;
-            
         }
 
         void OnTriggerEnter2D(Collider2D other)
@@ -183,9 +177,6 @@ namespace Gamekit2D
             }
         }
 
-       
-      
-
         void Update()
         {
             if (PlayerInput.Instance.Pause.Down)
@@ -206,7 +197,7 @@ namespace Gamekit2D
                     Unpause();
                 }
             }
-    }
+        }
 
         void FixedUpdate()
         { 
